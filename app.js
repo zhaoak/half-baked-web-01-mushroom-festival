@@ -80,12 +80,14 @@ function displayFriends() {
         // this is a clickable list, so . . .
         // add an event listener to each friend
         friendEl.addEventListener('click', () => {
-            // check if you have shrooms
+            // check if you have shrooms, then if friend satisfaction is full
             if (mushroomCount < 1) {
                 alert('You have no mushrooms, go forage for some!');
+            } else if (friend.satisfaction > 2) {
+                alert(`${friend.name} doesn't want any more mushrooms.`);
             }
-            // and if the friend's satisfaction level is below 3 and you have mushrooms left
-            else if (friend.satisfaction < 3 && mushroomCount > 0) {
+            // then, having verified satisfaction level is below 3 and you have mushrooms left
+            else {
                 // increment the friends satisfaction and decrement your mushrooms
                 friend.satisfaction++;
                 mushroomCount--;
