@@ -167,6 +167,7 @@ footer {
 
 .friend .name {
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .friend .emoji {
@@ -205,12 +206,28 @@ footer {
     bottom: 200px;
 }
 
-.mushroom {
+.porcini {
     width: 100px;
     height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../assets/porcini.png');
+}
+
+.chanterelle {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/chanterelle.png');
+}
+
+.morel {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/morel.png');
 }
 
 label {
