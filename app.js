@@ -10,6 +10,17 @@ const addFriendButton = document.getElementById('add-friend-button');
 
 let mushroomCount = 3;
 
+const randomNamePool = [
+    'Leah',
+    'Dean Dingus',
+    'Jerma',
+    'Hank',
+    'Treat',
+    'Nicholas Cage',
+    'Oliver',
+    'Michael Buble',
+];
+
 const friendData = [
     {
         name: 'Erich',
@@ -45,7 +56,7 @@ addFriendButton.addEventListener('click', () => {
     const newFriendName = friendInputEl.value;
     // create a new friend object
     // push it into the friends state array, passed in as an argument
-    friendData.push({ name: newFriendName, satisfaction: 1 });  // they're a doubter in the power of shroom
+    friendData.push({ name: newFriendName, satisfaction: 1 }); // they're a doubter in the power of shroom
     // reset the input
     friendInputEl.value = '';
     // display all the friends (use a function here)
