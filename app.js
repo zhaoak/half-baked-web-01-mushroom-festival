@@ -53,7 +53,12 @@ addMushroomButton.addEventListener('click', () => {
 
 addFriendButton.addEventListener('click', () => {
     // get the name from the input
-    const newFriendName = friendInputEl.value;
+    let newFriendName = friendInputEl.value;
+
+    // if no name entered, assign random name
+    if (newFriendName === '') {
+        newFriendName = randomNamePool[Math.floor(Math.random() * randomNamePool.length)];
+    }
     // create a new friend object
     // push it into the friends state array, passed in as an argument
     friendData.push({ name: newFriendName, satisfaction: 1 }); // they're a doubter in the power of shroom
