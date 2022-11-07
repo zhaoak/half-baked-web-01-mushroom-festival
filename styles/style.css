@@ -167,6 +167,7 @@ footer {
 
 .friend .name {
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .friend .emoji {
